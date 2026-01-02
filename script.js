@@ -23,9 +23,33 @@ console.log(reverseName);
 
 // --? Multiplier
 
-const number = +prompt("Enter the number");
+const number = 10;
 
 console.log(`${number}'s Multipication`);
 for (i = 1; i < 11; i++) {
   console.log(`${number} x ${i} = ${number * i} `);
 }
+
+//Max Number:
+const numbers = [25, 82, 27, 56, 89, 47, 72];
+let max = numbers[0];
+
+for (i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+  if (numbers[i] > max) {
+    max = numbers[i];
+  }
+}
+
+console.log(max);
+
+//Min Number
+const allNumber = [25, 82, 27, 56, 89, 47, 72];
+let min = allNumber[0];
+
+for (i = 0; i < allNumber.length; i++) {
+  if (allNumber[i] < min) {
+    min = allNumber[i];
+  }
+}
+console.log(min);
