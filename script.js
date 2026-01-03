@@ -76,3 +76,24 @@ for (i = 1; i <= 3; i++) {
     console.log(`Do exercise number - ${j} in the morning`);
   }
 }
+//11. Prime number
+// A prime number is a number which only can be divided by 1 and itself.
+let num = 7;
+let isPrime = true;
+
+if (num <= 1) {
+  isPrime = false;
+} else {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+}
+
+if (isPrime) {
+  console.log("Prime number");
+} else {
+  console.log("Not a prime number");
+}
